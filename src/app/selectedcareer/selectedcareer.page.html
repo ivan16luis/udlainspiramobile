@@ -1,0 +1,44 @@
+<ion-content>
+  <div class="content-header">
+    <div style="padding: 20px">
+      <ion-img (click)="goBack()" src="/assets/path207.png"></ion-img>
+    </div>
+    <div class="logo-right">
+      <div style="display: flex; padding: 10px;">
+        <h3 class="text-registro">Micro Tips</h3>
+      </div>
+      <div style="display: flex;">
+        <ion-img src="/assets/path48.png"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div class="logo-career">
+    <ion-img style="width: 25%; height: 25%;" src="/assets/g1183.png"></ion-img>
+    <div style="text-align: center">
+      <h2 class="text-title">
+        TIP CARRERA DE:
+      </h2>
+    </div>
+  </div>
+  <div *ngIf="career._id" class="cards-form">
+    <!--container-->
+    <div class="item-card hvr-float-shadow">
+      <ion-img [src]="career.url"></ion-img>
+    </div>
+    <!--container-->
+  </div>
+  <br>
+  <!--show tips selected-->
+  <div class="cards-form">
+    <!--container-->
+    <div class="item-card hvr-float-shadow" *ngFor="let idz of tips;let i=index">
+      <div (click)="opencard(idz)" class="container-image">
+          <ion-img (click)="opencard(idz)" [src]="idz.url"></ion-img>
+          <div class="center-text-image">
+            <h2 class="text-tip">{{idz.name | uppercase }}</h2>
+          </div>
+      </div>
+    </div>
+    <!--container-->
+  </div>
+</ion-content>

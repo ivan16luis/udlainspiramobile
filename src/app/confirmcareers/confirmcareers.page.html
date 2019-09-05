@@ -1,0 +1,43 @@
+<ion-content>
+    <div class="content-header">
+        <div style="padding: 20px">
+            <ion-img (click)="goBack()" src="/assets/path207.png"></ion-img>
+        </div>
+        <div class="logo-right">
+            <div style="display: flex; padding: 10px;">
+                <h3 class="text-registro">Experiencias</h3>
+            </div>
+            <div style="display: flex;">
+                <ion-img src="/assets/path48.png"></ion-img>
+            </div>
+        </div>
+    </div>
+    <div class="logo-career">
+        <ion-img style="width: 25%; height: 25%;" src="/assets/use468.png"></ion-img>
+        <!--seleccion de experiencias-->
+        <div style="text-align: center">
+            <h2 class="text-subTitle">
+                EXPERIENCIAS<br>
+                SELECCIONADAS:<br>
+            </h2>
+        </div>
+    </div>
+    <div class="cards-form">
+        <!--container-->
+        <div class="item-card hvr-float-shadow" *ngFor="let idx of careers_selected;let i=index">
+            <ion-img [src]="idx.url"></ion-img>
+        </div>
+        <!--container-->
+    </div>
+    <div class="logo-career">
+        <div style="text-align: center">
+            <h3 class="text-title">
+                Si confirmas tu selección, ya no podrás<br>
+                hacer cambios futuros.
+            </h3>
+        </div>
+    </div>
+    <div class="confirmar-form">
+        <img class="hvr-float-shadow" (click)="confirmar()" width="35%" height="35%" src="/assets/g927.png" alt="btn_confirmar">
+    </div>
+</ion-content>

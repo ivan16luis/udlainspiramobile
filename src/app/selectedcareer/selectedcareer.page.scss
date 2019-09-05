@@ -1,0 +1,88 @@
+ion-content {
+  --background: #1d023f url("/assets/g44.png") no-repeat center center / cover;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.item-card {
+  width: 100%;
+  height: 30%;
+  padding: 10px;
+}
+
+.selected-career {
+  width: 100%;
+  height: 6px;
+  background: rgb(251, 255, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 255, 0, 1) 0%,
+    rgba(56, 255, 25, 1) 100%
+  );
+}
+
+.constent-select {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.text-registro {
+  color: #ff009e;
+  font-size: 15px;
+  font-family: "oxanium";
+}
+
+.text-title {
+  color: white;
+  font-size: 18px;
+  font-family: "oxanium";
+}
+
+.text-tip {
+  color: white;
+  font-size: 26px;
+  font-family: "oxanium";
+}
+
+.text-subTitle {
+  color: #00ff00;
+  font-size: 17px;
+  font-family: "oxanium";
+}
+
+.container-image {
+  position: relative;
+  text-align: center;
+}
+
+.center-text-image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-career {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}

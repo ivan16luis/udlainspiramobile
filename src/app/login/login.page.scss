@@ -1,0 +1,41 @@
+ion-content {
+  --background: #1d023f url("/assets/image32.png") no-repeat center center /
+    cover;
+}
+
+.btn-login {
+  --background: rgb(0, 255, 234);
+  --background: linear-gradient(
+    90deg,
+    rgba(0, 255, 234, 1) 0%,
+    rgba(0, 249, 98, 1) 50%,
+    rgba(0, 247, 41, 1) 100%
+  );
+  --background-activated: linear-gradient(
+    90deg,
+    rgba(0, 255, 234, 1) 0%,
+    rgba(0, 249, 98, 1) 50%,
+    rgba(0, 247, 41, 1) 100%
+  );
+  --color: #1d023f;
+  --border-radius: 0;
+  --color-activated: #1d023f;
+}
+
+.login-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.text-button {
+  color: white;
+  font-size: 20px;
+  font-family: "oxanium";
+}
+
+//--ion-background-color: #1d023f;
+//--background: url('/assets/background.svg') no-repeat;

@@ -1,0 +1,40 @@
+<ion-content>
+  <div class="content-header">
+    <div style="padding: 20px">
+      <ion-img (click)="goBack()" src="/assets/path207.png"></ion-img>
+    </div>
+    <div class="logo-right">
+      <div style="display: flex; padding: 10px;">
+        <h3 class="text-registro">Micro Tips</h3>
+      </div>
+      <div style="display: flex;">
+        <ion-img src="/assets/path48.png"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="tip._id" class="cards-form">
+    <!--container-->
+    <div class="item-card hvr-float-shadow">
+      <div class="container-image">
+        <ion-img [src]="tip.url"></ion-img>
+        <div class="center-text-image">
+          <h2 class="text-tip">{{tip.name | uppercase }}</h2>
+        </div>
+      </div>
+    </div>
+    <!--container-->
+  </div>
+  <br>
+  <!--carousel card tip tile-->
+  <div *ngIf="cards.length > 0" class="cards-form">
+    <!--container-->
+    <div style="padding: 10px">
+      <ion-slides pager="true" (ionSlideDidChange)="changeEvent($event)">
+        <ion-slide *ngFor="let item of cards">
+          <img [src]="item.url" [alt]="item.code">
+        </ion-slide>
+      </ion-slides>
+    </div>
+    <!--container-->
+  </div>
+</ion-content>

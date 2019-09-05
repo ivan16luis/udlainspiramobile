@@ -1,0 +1,35 @@
+
+###
+
+POST https://udlainspira.appspot.com/api/career/all
+
+
+###
+
+POST https://udlainspira.appspot.com/api/tip/list
+Content-Type: application/json
+
+{
+    "page":1,
+    "limit": 5,
+    "_id": "5d655f0aad8162000739d7f6"
+}
+
+###
+
+POST https://udlainspira.appspot.com/api/tip/find/career
+Content-Type: application/json
+
+{
+    "_id": "5d5c782f38c0eb00075eb689"
+}
+
+
+###
+
+POST https://udlainspira.appspot.com/api/card/find/tip
+Content-Type: application/json
+
+{
+    "tip": "5d656296ad8162000739d7f9"
+}

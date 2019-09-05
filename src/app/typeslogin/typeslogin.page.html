@@ -1,0 +1,36 @@
+<ion-content>
+  <div class="logo-right">
+    <div style="display: flex; padding: 10px;">
+      <h3 class="text-registro">Registro</h3>
+    </div>
+    <div style="display: flex;">
+      <ion-img src="/assets/path48.png"></ion-img>
+    </div>
+  </div>
+  <div class="center-label">
+    <h4 class="text-button">Registrarse usando:</h4>
+  </div>
+  <div class="login-buttons">
+    <ion-button class="btn-login-facebook text-button" (click)="loginFacebook()" expand="block">FACEBOOK</ion-button>
+    <br>
+    <ion-button class="btn-login-google text-button" (click)="loginGoogle()" expand="block">GOOGLE</ion-button>
+    <br>
+    <ion-button class="btn-login-email text-button" expand="block">EMAIL</ion-button>
+  </div>
+  <form [formGroup]="userForm" (ngSubmit)="avanza()">
+    <div class="login-form">
+      <!--label-->
+      <h5 class="text-label">Email:</h5>
+      <!--input-->
+      <ion-input class="input-text" type="email" formControlName="email" placeholder=""></ion-input>
+      <!--label-->
+      <h5 class="text-label">Password:</h5>
+      <!--input-->
+      <ion-input class="input-text" type="password" formControlName="password" placeholder=""></ion-input>
+    </div>
+    <div class="avanza-form">
+      <img class="hvr-float-shadow" (click)="avanza()" width="35%" height="35%" src="/assets/text104.png"
+        alt="btn_avanza">
+    </div>
+  </form>
+</ion-content>

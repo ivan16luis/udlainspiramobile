@@ -1,0 +1,85 @@
+<ion-content>
+  <div class="content-header">
+    <div style="padding: 20px">
+      <ion-img (click)="goBack()" src="/assets/path207.png"></ion-img>
+    </div>
+    <div class="logo-right">
+      <div style="display: flex; padding: 10px;">
+        <h3 class="text-registro">Registro</h3>
+      </div>
+      <div style="display: flex;">
+        <ion-img src="/assets/path48.png"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div class="logo-star">
+    <ion-img style="width: 30%; height: 30%;" src="/assets/path197.png"></ion-img>
+    <div style="text-align: center">
+      <h3 class="text-title">
+        Gana tus primeros puntos, <br>
+        al llenar tu información básica
+      </h3>
+    </div>
+  </div>
+  <div class="register-form">
+    <!--label-->
+    <h3 class="step-one">1</h3>
+    <h4 class="text-label">Nombres:</h4>
+    <!--input-->
+    <div class="one-input">
+      <ion-input class="input-text-one" placeholder=""></ion-input>
+    </div>
+    <!--label-->
+    <h4 class="text-label">Apellidos:</h4>
+    <!--input-->
+    <div class="one-input">
+      <ion-input class="input-text-one" placeholder=""></ion-input>
+    </div>
+    <br>
+    <!--select-->
+    <!--label-->
+    <h3 class="step-two">2</h3>
+    <h4 class="text-label">Fecha de nacimiento:</h4>
+    <div class="constent-select">
+      <ion-select color="invisible" class="select_box" placeholder="DIA">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+      </ion-select>
+      <ion-select color="invisible" class="select_box" placeholder="MES">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+      </ion-select>
+      <ion-select color="invisible" class="select_box" placeholder="AÑO">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+      </ion-select>
+    </div>
+    <h4 class="text-label">Curso:</h4>
+    <ion-select color="invisible" class="select_box_expand" placeholder="">
+      <ion-select-option value="f">Female</ion-select-option>
+      <ion-select-option value="m">Male</ion-select-option>
+    </ion-select>
+    <h4 class="text-label">Colegio:</h4>
+    <ion-select color="invisible" class="select_box_expand" placeholder="">
+      <ion-select-option value="f">Female</ion-select-option>
+      <ion-select-option value="m">Male</ion-select-option>
+    </ion-select>
+    <br>
+    <!--step 4-->
+    <h3 class="step-three">3</h3>
+    <h4 class="text-label">Celular:</h4>
+    <!--input-->
+    <div class="three-input">
+      <ion-input class="input-text-three" placeholder=""></ion-input>
+    </div>
+    <!--label-->
+    <h4 class="text-label">Email:</h4>
+    <!--input-->
+    <div class="three-input">
+      <ion-input class="input-text-three" placeholder=""></ion-input>
+    </div>
+  </div>
+  <div class="avanza-form">
+    <img class="hvr-float-shadow" (click)="avanza()" width="35%" height="35%" src="/assets/text104.png" alt="btn_avanza">
+  </div>
+</ion-content>

@@ -1,0 +1,42 @@
+<ion-content>
+  <div class="content-header">
+    <div style="padding: 20px">
+      <ion-img (click)="goBack()" src="/assets/path207.png"></ion-img>
+    </div>
+    <div class="logo-right">
+      <div style="display: flex; padding: 10px;">
+        <h3 class="text-registro">Experiencias</h3>
+      </div>
+      <div style="display: flex;">
+        <ion-img src="/assets/path48.png"></ion-img>
+      </div>
+    </div>
+  </div>
+  <div class="logo-career">
+    <ion-img style="width: 25%; height: 25%;" src="/assets/use468.png"></ion-img>
+    <div style="text-align: center">
+      <h3 class="text-title">
+        En nuestro Udla inspira tenemos un dia<br>
+        lleno de increibles experiencias diseñadas<br>
+        de acuerdo a tus<br>
+        intereces académicos
+      </h3>
+    </div>
+    <!--seleccion de experiencias-->
+    <div style="text-align: center">
+      <h2 class="text-subTitle">
+        RESERVA<br>
+        TUS TRES<br>
+        <div style="color: #00ff00">EXPERIENCIAS</div>
+      </h2>
+    </div>
+  </div>
+  <div class="cards-form">
+    <!--container-->
+    <div class="item-card hvr-float-shadow" *ngFor="let idx of careers;let i=index">
+      <ion-img (click)="opencard(idx,i)" [src]="idx.url"></ion-img>
+      <div *ngIf="idx.selected" class="selected-career"></div>
+    </div>
+    <!--container-->
+  </div>
+</ion-content>

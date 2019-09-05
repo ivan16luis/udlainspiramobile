@@ -1,0 +1,115 @@
+ion-content {
+  --background: #1d023f url("/assets/g44.png") no-repeat center center / cover;
+}
+
+.btn-login-facebook {
+  --background: rgb(0, 91, 247);
+  --background: linear-gradient(
+    90deg,
+    rgba(0, 91, 247, 1) 0%,
+    rgba(0, 148, 242, 1) 50%,
+    rgba(0, 204, 255, 1) 100%
+  );
+  --background-activated: linear-gradient(
+    90deg,
+    rgba(0, 91, 247, 1) 0%,
+    rgba(0, 148, 242, 1) 50%,
+    rgba(0, 204, 255, 1) 100%
+  );
+  --color: #1d023f;
+  --border-radius: 0;
+  --color-activated: #1d023f;
+}
+
+.btn-login-google {
+  --background: rgb(255, 140, 0);
+  --background: linear-gradient(
+    90deg,
+    rgba(255, 140, 0, 1) 0%,
+    rgba(207, 4, 58, 1) 100%
+  );
+  --background-activated: linear-gradient(
+    90deg,
+    rgba(255, 140, 0, 1) 0%,
+    rgba(207, 4, 58, 1) 100%
+  );
+  --color: #1d023f;
+  --border-radius: 0;
+  --color-activated: #1d023f;
+}
+
+.btn-login-email {
+  --background: rgb(238, 0, 87);
+  --background: linear-gradient(
+    90deg,
+    rgba(238, 0, 87, 1) 0%,
+    rgba(102, 0, 233, 1) 100%
+  );
+  --background-activated: linear-gradient(
+    90deg,
+    rgba(238, 0, 87, 1) 0%,
+    rgba(102, 0, 233, 1) 100%
+  );
+  --color: #1d023f;
+  --border-radius: 0;
+  --color-activated: #1d023f;
+}
+
+.center-label {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.text-button {
+  color: white;
+  font-size: 20px;
+  font-family: "oxanium";
+}
+
+.text-registro {
+  color: #ff009e;
+  font-size: 20px;
+  font-family: "oxanium";
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.text-label {
+  color: white;
+  font-size: 20px;
+  font-family: "oxanium";
+}
+
+.input-text {
+  background: white;
+  font-family: "oxanium";
+  text-align: center;
+}
+
+.avanza-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+}
